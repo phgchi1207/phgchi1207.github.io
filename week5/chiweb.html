@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="styleweb.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Nguyễn Đỗ Phương Chi - PROFILE</div>
+        <div class="menu">
+            <a href="#" onclick="navigate('home')">Home</a>
+            <a href="#" onclick="navigate('about')">About Me</a>
+            <a href="#" onclick="navigate('contact')">Contact</a>
+            <a href="#" onclick="navigate('page')">Page Content</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="home" class="home active">
+            <h1>Welcome to My Profile</h1>
+            <p>This is the home page of your personal profile website. Feel free to navigate to learn more about me.</p>
+        </div>
+        
+        <div id="about" class="about">
+            <h1>About Me</h1>
+            <p>facebook : <a href="https://www.facebook.com/phuong.chi.12072004"><span class="bold">NGUYEN DO PHUONG CHI</span></a></p>
+            <p>This section contains details about you, your background, your interests, or anything else you'd like to share.</p>
+        </div>
+        
+        <div id="contact" class="contact">
+            <h1>Contact</h1>
+            <p>If you'd like to get in touch, please contact me via email or social media.</p>
+        </div>
+
+        <div id="page" class="page">
+            <h1> Page Content</h1>
+            <p> I'm verry happy to share my story on this</p>
+        </div>
+    </div>
+
+    <script>
+        function navigate(section) {
+            const sections = document.querySelectorAll('.content > div');
+            sections.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>

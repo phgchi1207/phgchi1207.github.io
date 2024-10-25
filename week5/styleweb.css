@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.home, .about, .contact, .page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
